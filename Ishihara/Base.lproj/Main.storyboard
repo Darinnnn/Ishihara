@@ -32,12 +32,6 @@
                                     <rect key="frame" x="34" y="20" width="333" height="64"/>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ishihara_01.png" translatesAutoresizingMaskIntoConstraints="NO" id="d5O-FH-74t">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="63" y="92" width="274" height="273"/>
-                                </variation>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="คุณเห็นเลข อะไร?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qf1-m1-UUM">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <color key="backgroundColor" red="0.30133481360377601" green="1" blue="0.96661487156710824" alpha="1" colorSpace="calibratedRGB"/>
@@ -63,35 +57,48 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="41" y="500" width="333" height="46"/>
                                 </variation>
+                                <connections>
+                                    <action selector="answerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7jc-Ov-Aer"/>
+                                </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ishihara_01.png" translatesAutoresizingMaskIntoConstraints="NO" id="d5O-FH-74t">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="70" y="92" width="274" height="273"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="a5f-HI-dTA"/>
                                 <exclude reference="1WP-qP-9AN"/>
-                                <exclude reference="d5O-FH-74t"/>
                                 <exclude reference="Qf1-m1-UUM"/>
                                 <exclude reference="wqf-lc-DSY"/>
                                 <exclude reference="c6I-GN-Jbq"/>
+                                <exclude reference="d5O-FH-74t"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="a5f-HI-dTA"/>
                                 <include reference="1WP-qP-9AN"/>
-                                <include reference="d5O-FH-74t"/>
                                 <include reference="Qf1-m1-UUM"/>
                                 <include reference="wqf-lc-DSY"/>
                                 <include reference="c6I-GN-Jbq"/>
+                                <include reference="d5O-FH-74t"/>
                             </mask>
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="answerTextField" destination="wqf-lc-DSY" id="U9R-nI-GtO"/>
+                        <outlet property="ishiharaImageView" destination="d5O-FH-74t" id="U1e-bW-8bt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="304.5" y="433.5"/>
+            <point key="canvasLocation" x="585" y="493.5"/>
         </scene>
     </scenes>
     <resources>
